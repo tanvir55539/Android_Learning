@@ -1,0 +1,9 @@
+package com.example.recipeapp
+
+import android.transition.Scene
+
+sealed class Screen(val route:String) {
+    object RecipeScreen:Screen("recipescreen")
+    object DetailScreen:Screen("detailscreen")
+
+}
